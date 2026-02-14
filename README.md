@@ -1,4 +1,4 @@
-# 🚧 Skill Bharat 🇮🇳
+# 🚧 Saksham 🇮🇳
 
 > AI-Powered Skilling and Opportunity Platform for Women in India
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 💡 What is Skill Bharat?
+## 💡 What is Saksham?
 
 An AI-powered platform empowering **10 million Indian women** to learn skills, find safe opportunities, and earn **₹10-15k/month** through:
 
