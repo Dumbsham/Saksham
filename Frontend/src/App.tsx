@@ -9,7 +9,7 @@ import { ProfilePage } from './pages/ProfilePage';
 import { OnboardingPage } from './pages/OnboardingPage';
 import { useEffect, useState } from 'react';
 import { useAuth } from '@clerk/clerk-react';
-
+import { SmoothCursor } from "./components/smooth-cursor";
 const CLERK_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 const API_BASE = 'http://localhost:5000/api';
 
@@ -67,6 +67,7 @@ function ClerkProviderWithRoutes() {
       navigate={(to) => navigate(to)}
     >
       <div className="font-outfit">
+        <SmoothCursor />
         <Header />
         <Routes>
           <Route path="/" element={<LandingPage />} />
