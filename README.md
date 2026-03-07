@@ -1,11 +1,12 @@
-# 🚧 Saksham 🇮🇳
+# 🌟 Saksham 🇮🇳
 
 > AI-Powered Skilling and Opportunity Platform for Women in India
 
-[![Status](https://img.shields.io/badge/Status-Coming%20Soon-yellow?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-Live-brightgreen?style=for-the-badge)]()
 [![Hackathon](https://img.shields.io/badge/Hackathon-AI%20Bharat%202025-blue?style=for-the-badge)]()
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-orange?style=for-the-badge)](https://d1u1zlg79y6goc.cloudfront.net)
 
-**🚀 Currently in Development | Expected Launch: March 2025**
+**🚀 [Live Demo → https://d1u1zlg79y6goc.cloudfront.net](https://d1u1zlg79y6goc.cloudfront.net)**
 
 ---
 
@@ -13,11 +14,11 @@
 
 An AI-powered platform empowering **10 million Indian women** to learn skills, find safe opportunities, and earn **₹10-15k/month** through:
 
-- 🎤 **Voice-First Interface** in Hindi (Amazon Transcribe + Polly)
-- 🤖 **AI Skill Recommendations** (Amazon Bedrock - Claude AI)
-- 💼 **Verified Job Matching** (No degree required)
+- 🎤 **Voice-First Onboarding** — speak in Hindi, get a personalized profile instantly
+- 🤖 **AI Career Recommendations** — smart, personalized skill and career guidance
+- 💼 **Verified Job Matching** — no degree required, safe and trusted opportunities
 - 📚 **Personalized Learning** that fits household schedules
-- ✅ **Safe & Trusted** ecosystem
+- ✅ **Safe & Trusted** ecosystem built for Indian women
 
 ---
 
@@ -37,56 +38,7 @@ An AI-powered platform empowering **10 million Indian women** to learn skills, f
 
 ---
 
-## 🛠️ Planned Tech Stack
-
-### **AI Layer**
-- 🤖 **Amazon Bedrock** - Claude 3.5 Sonnet for recommendations
-- 🎤 **Amazon Transcribe** - Hindi speech-to-text
-- 🔊 **Amazon Polly** - Hindi text-to-speech (Aditi voice)
-- ⚡ **AWS Lambda** - Serverless AI functions
-
-### **Application**
-- ⚛️ **React + TypeScript** - Mobile-first PWA
-- 🟢 **Node.js + Express** - Backend API
-- 🍃 **MongoDB Atlas** - Database
-- ☁️ **AWS Amplify** - Frontend hosting
-- 🚀 **AWS Elastic Beanstalk** - Backend hosting
-
-### **Storage**
-- 📦 **Amazon S3** - Voice files & media
-- 🌐 **CloudFront** - CDN
-
----
-
-## 📅 Development Status
-
-**Phase 1: Planning & Architecture** ✅
-- Requirements defined
-- System architecture designed
-- Tech stack finalized
-- AWS infrastructure planned
-
-**Phase 2: Core Development** 🔨 *In Progress*
-- AI recommendation engine
-- Voice processing pipeline
-- Database schema implementation
-- API development
-
-**Phase 3: Integration** ⏳ *Upcoming*
-- Frontend-backend integration
-- End-to-end testing
-- Performance optimization
-
-**Phase 4: Launch Preparation** 🎯 *Planned*
-- UI/UX polish
-- Demo preparation
-- Documentation completion
-
-**Target Launch:** March 2025
-
----
-
-## ✨ Key Features (Coming Soon)
+## ✨ Features (Live & Working)
 
 ### 🎤 Voice-Based Onboarding
 ```
@@ -95,12 +47,12 @@ AI understands: "I can work 2 hours per day"
 Creates profile automatically
 ```
 
-### 🤖 AI Skill Recommendations
+### 🤖 AI Career Recommendations
 ```
 Input: User profile (education, time, location)
-Output: 3 perfect skill matches with:
+Output: Personalized career matches with:
   - Earning potential (₹10-15k/month)
-  - Time to learn (weeks)
+  - Time to learn
   - Why it's perfect for YOU
 ```
 
@@ -113,14 +65,38 @@ Filters jobs by:
 ✅ Fits user's time & location
 ```
 
-### 📚 Adaptive Learning
-```
-AI creates schedule around:
-- Household work
-- Children's school timings
-- Personal constraints
-- Voice reminders in Hindi
-```
+---
+
+## 🛠️ Tech Stack
+
+### **AI & Voice**
+- 🎤 **Google Cloud Speech-to-Text** — Hindi voice transcription
+- 🔊 **Google Cloud Text-to-Speech** — Hindi voice responses
+- 🤖 **Google Vertex AI (Gemini)** — Career recommendations & AI agent
+- ⚡ **Groq** — Fast LLM inference for career comparison
+
+### **Application**
+- ⚛️ **React 18 + TypeScript + Vite** — Fast, modern frontend
+- 🎨 **Tailwind CSS + Framer Motion** — Beautiful, animated UI
+- 🌐 **Three.js + React Three Fiber** — 3D interactive experience
+- 🟢 **Node.js + Express** — Backend API
+- 🍃 **MongoDB Atlas** — Database
+- 🔐 **Clerk** — Authentication
+
+### **Infrastructure**
+- ☁️ **AWS S3 + CloudFront** — Frontend hosting & CDN
+- 🚀 **AWS EC2 + PM2** — Backend hosting
+- 🌍 **Mumbai Region (ap-south-1)** — Low latency for Indian users
+
+---
+
+## 🚀 Deployment
+
+| Service | URL |
+|---------|-----|
+| Frontend | https://d1u1zlg79y6goc.cloudfront.net |
+| Backend API | AWS EC2 (ap-south-1) |
+| Database | MongoDB Atlas |
 
 ---
 
@@ -142,77 +118,59 @@ AI creates schedule around:
 
 ## 👥 Team
 
-- **Saksham** - AWS & AI Integration
-- **Radhika** - Full-stack Development
+| Name | Role |
+|------|------|
+| **Saksham** | AWS Infrastructure, AI Integration, Backend |
+| **Radhika** | Full-stack Development, UI/UX |
 
 **Built for:** AI Bharat Hackathon 2025
 
 ---
 
-## 📬 Stay Updated
+## 🏃 Running Locally
 
-⭐ **Star this repo** to follow our progress!
+### Frontend
+```bash
+cd Frontend
+npm install --legacy-peer-deps
+cp .env.example .env  # add your keys
+npm run dev
+```
 
-🔔 **Watch** for updates as we build
+### Backend
+```bash
+cd Backend
+npm install
+cp .env.example .env  # add your keys
+node server.js
+```
 
-💬 **Questions?** Open an issue or reach out
+### Environment Variables
+
+**Frontend (`.env`):**
+```
+VITE_API_URL=http://localhost:5000/api
+VITE_CLERK_PUBLISHABLE_KEY=your_key
+VITE_GROQ_API_KEY=your_key
+```
+
+**Backend (`.env`):**
+```
+PORT=5000
+MONGO_URI=your_mongodb_uri
+GOOGLE_PROJECT_ID=your_project_id
+GCP_CREDENTIALS_JSON={"type":"service_account",...}
+YOUTUBE_API_KEY=your_key
+CLERK_PUBLISHABLE_KEY=your_key
+CLERK_SECRET_KEY=your_key
+FRONTEND_URLS=http://localhost:5173
+```
 
 ---
-
-## 🗓️ Progress Tracker
-
-**What we've completed:**
-
-```
-✅ Problem validation & user research
-✅ Technical architecture design
-✅ AWS service selection & planning
-✅ Database schema design
-✅ API specification
-```
-
-**Currently building:**
-
-```
-🔨 AI recommendation engine (Amazon Bedrock)
-🔨 Voice processing (Transcribe + Polly)
-🔨 Backend API (Node.js + Express)
-🔨 Frontend UI (React + TypeScript)
-```
-
-**Coming next:**
-
-```
-⏳ Full-stack integration
-⏳ Mobile optimization
-⏳ Performance testing
-⏳ Demo preparation
-```
-
-**Follow our progress** by starring this repo!
-
----
-
-## 🤝 Want to Contribute?
-
-We'll open for contributions after MVP launch. Until then:
-
-- ⭐ Star the repo
-- 👀 Watch for updates
-- 💡 Share ideas in Issues
-- 🔄 Share with others who might benefit
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-**TL;DR:** You can use, modify, and distribute this code freely. Just keep the copyright notice.
-```
-```
 
 ## 🙏 Acknowledgments
 
-- **Amazon Web Services** for AI services
+- **Google Cloud** for AI & voice services
 - **AI Bharat Hackathon** for the opportunity
 - **All the women** this will empower
 
@@ -220,22 +178,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-### 🚧 Work in Progress 🚧
+### 🌟 Live Now 🌟
+
+**[Try Saksham → https://d1u1zlg79y6goc.cloudfront.net](https://d1u1zlg79y6goc.cloudfront.net)**
 
 **Building something meaningful for 10 million women**
 
-**Check back soon for updates!**
-
 ---
 
-**For questions, contact:** [Sakshamnoida37@gmail.com]
-
-**Project by:** Saksham & Radhika
-
----
-
-[![Built with AWS](https://img.shields.io/badge/Built%20with-AWS-orange?style=for-the-badge&logo=amazon-aws)](https://aws.amazon.com)
-[![Powered by AI](https://img.shields.io/badge/Powered%20by-AI-blue?style=for-the-badge)](https://aws.amazon.com/bedrock)
+[![Built with Google Cloud](https://img.shields.io/badge/Built%20with-Google%20Cloud-4285F4?style=for-the-badge&logo=google-cloud)](https://cloud.google.com)
+[![Hosted on AWS](https://img.shields.io/badge/Hosted%20on-AWS-orange?style=for-the-badge&logo=amazon-aws)](https://aws.amazon.com)
 [![Made in India](https://img.shields.io/badge/Made%20in-India-green?style=for-the-badge)](https://en.wikipedia.org/wiki/India)
 
 </div>
